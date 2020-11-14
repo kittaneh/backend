@@ -14,6 +14,10 @@ export class UserService {
     return this.userRepository.find();
   }
 
+  async countAll(): Promise<number> {
+    return this.userRepository.count();
+  }
+
   async create(
     firstname: string,
     lastname: string,
