@@ -1,9 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import * as request from 'supertest';
 import { GraphQLModule } from '@nestjs/graphql';
+import { TypeOrmModule } from '@nestjs/typeorm';
+
 import { UserModule } from '../src/user/user.module';
 import { User } from '../src/user/user.model';
-import { TypeOrmModule } from '@nestjs/typeorm';
 
 describe('User (e2e)', () => {
   let app;
