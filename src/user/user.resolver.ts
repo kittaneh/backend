@@ -1,8 +1,9 @@
 import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
-import { UserService } from './user.service';
-import { User } from './user.model';
 import * as Joi from '@hapi/joi';
 import { BadRequestException } from '@nestjs/common';
+
+import { UserService } from './user.service';
+import { User } from './user.model';
 
 //server validation with Joi
 const schema = Joi.object().keys({
